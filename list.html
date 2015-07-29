@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cheers ! </title>
+
+    <script type="application/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="application/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+    <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"
+            defer></script>
+    <script type="application/javascript" src="public/semantic/dist/semantic.min.js" defer></script>
+    <script type="application/javascript" src="public/js/jquery.backstretch.min.js"></script>
+
+    <link rel="stylesheet" href="public/semantic/dist/semantic.min.css"/>
+</head>
+<body>
+<div class="ui container" style="margin-top: 50px;">
+
+    <h1 class="ui  teal header">Find everything :)</h1>
+
+    <form action="" class="ui huge form">
+        <div class="ui right action left icon input">
+            <i class="search icon"></i>
+            <input type="text" placeholder="Search for an event here"/>
+        </div>
+    </form>
+
+    <div class="ui four column grid">
+        <div class="column">
+            <div class="ui fluid card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content">
+                            <div class="center">
+                                <a class="ui inverted teal button" href="event-details.html">Get ticket !</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="" style="width: 100%;height: 115px; overflow: hidden;
+                    background-image: url(http://placehold.it/200x100);
+                    background-size: cover;">
+                </div>
+                <div class="content">
+                    <a class="header">Chill & Sunday</a>
+
+                    <div class="meta">
+                        <span class="date">
+                            <i class="calendar icon"></i>12th Sep 2014
+                            <i class="clock icon"></i>21:00
+                        </span>
+                    </div>
+                </div>
+                <div class="extra content">
+                    <a>
+                        <i class="users icon"></i>
+                        2 Members
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.four .column .image').dimmer({
+            on: 'hover'
+        });
+    })
+</script>
+</body>
+</html>
