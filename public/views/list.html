@@ -1,0 +1,47 @@
+<div class="ui container" style="margin-top: 50px;">
+
+    <h1 class="ui  teal header">Find your ticket :) </h1>
+
+    <form action="" class="ui huge form">
+        <div class="ui right action left icon input">
+            <i class="search icon"></i>
+            <input ng-model="query" placeholder="Search for an event here" style="border: none;" />
+        </div>
+    </form>
+
+    <div class="ui fluid three stackable  cards container">
+        <div class="ui card" ng-repeat="event in r.events ">
+            <div class="content">
+                <img class="ui avatar image" src="public/img/events/chill/logo-chill.png">
+                {{ event.promotor.name }}
+            </div>
+            <div class="bluring dimmable image" style="height: 150px;
+            background-image: url({{event.picture}});
+            -webkit-background-size: cover;background-size: cover;
+            background-position: center center;">
+                <img>
+            </div>
+            <div class="content">
+                <a class="header">{{ event.name }}</a>
+
+                <div class="meta">
+                    <i class="ui calendar icon"></i>
+                    <span class="date">{{ event.date |date}}</span>
+                    <i class="ui clock icon"></i>
+                    <span class="time">22:30</span>
+                </div>
+
+            </div>
+
+            <div class="extra content">
+                <i class="check icon"></i>
+                Participants : {{event.clients.length}}
+                <div class="ui teal button right floated"><i class="ui ticket icon"></i> tickets!</div>
+            </div>
+
+        </div>
+
+        <h1 ng-model="text"></h1>
+
+    </div>
+</div>

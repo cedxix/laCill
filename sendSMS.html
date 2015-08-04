@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Send SMS</title>
+
+  <script type="application/javascript"
+          src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="ui page grid">
+  <button class="ui button red">Send sms</button>
+</div>
+
+<script>
+  $(document).ready (function (){
+        // Twilio Credentials
+    var accountSid = 'AC5630ef115a76ecd20d6b6e1c7f93265d';
+    var authToken = '80dc9e2365ac2e6be8733158d74f784e';
+
+    //require the Twilio module and create a REST client
+    var client = require('twilio')(accountSid, authToken);
+
+    client.messages.create({
+    	to: "0626693829",
+    	from: "0627313935",
+    	body: "Check Legit",
+    	mediaUrl: "http://lugus.stamplayapp.com/",
+    }, function(err, message) {
+    	console.log(message.sid);
+    });
+  });
+
+</script>
+</body>
+</html>
