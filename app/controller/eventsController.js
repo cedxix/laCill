@@ -3,13 +3,14 @@
  */
 app.controller("eventsController", ['$scope', function ($scope) {
 
-    $scope.r = {
+    $scope.r =  {
         "events": {
             "-JWT5y43YFy1mGirVVS2": {
                 "date": 1410328158691,
                 "name": "Chill on Sundays",
                 "picture" : "public/img/events/chill/feature-image.png",
                 "description" : "Chill chill and chill",
+                status : "open",
 
 
                 "promotor": {
@@ -98,6 +99,15 @@ app.controller("eventsController", ['$scope', function ($scope) {
     };
 
     $scope.text = "Hello";
+
+    var _getTicketData = function (id)
+    {
+
+    }
+
+    $scope.getTicket = function (id){
+        return _getTicketData(id)
+    }
 
 
 }]);

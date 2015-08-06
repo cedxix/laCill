@@ -11,6 +11,10 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'public/views/list.html',
             controller : 'eventsController'
         })
+        .when("/events/ticket/:id", {
+            templateURL : '',
+            controller : ''
+        })
     .otherwise({redirectTo: '/'})
 })
 

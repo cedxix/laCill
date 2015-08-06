@@ -1,6 +1,6 @@
 {
-  "appId": "epass",
-  "apiKey": "a3ea3af3b983ecb6f940a4ebf5c3d658daa6f38a64a0d058de84ccd13df05e09",
+  "appId": "lugus",
+  "apiKey": "e5750fad0f95186463258e3c7292d2f6b5cddd24bdc86641613180393a655161",
   "public": "./",
   "ignore": [
     "stamplay.json",

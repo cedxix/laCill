@@ -12,8 +12,8 @@
     <div class="ui fluid three stackable  cards container">
         <div class="ui card" ng-repeat="event in r.events ">
             <div class="content">
-                <img class="ui avatar image" src="public/img/events/chill/logo-chill.png">
-                {{ event.promotor.name }}
+                <img class="ui avatar image left floated" src="public/img/events/chill/logo-chill.png">
+                {{ event.promotor.name }}s
             </div>
             <div class="bluring dimmable image" style="height: 150px;
             background-image: url({{event.picture}});
@@ -23,7 +23,6 @@
             </div>
             <div class="content">
                 <a class="header">{{ event.name }}</a>
-
                 <div class="meta">
                     <i class="ui calendar icon"></i>
                     <span class="date">{{ event.date |date}}</span>
