@@ -4,8 +4,5 @@
 
 app.controller("homeController", [function ($scope){
 
-    $(document).ready(function () {
-        $('body').backstretch("public/img/background.jpg");
-    })
 
 }]);

@@ -10,10 +10,10 @@
     </form>
 
     <div class="ui fluid three stackable  cards container">
-        <div class="ui card" ng-repeat="event in r.events ">
+        <div class="ui card" ng-repeat="(key,event) in r.events">
             <div class="content">
                 <img class="ui avatar image left floated" src="public/img/events/chill/logo-chill.png">
-                {{ event.promotor.name }}s
+                {{ event.promotor.name }}
             </div>
             <div class="bluring dimmable image" style="height: 150px;
             background-image: url({{event.picture}});
@@ -35,12 +35,10 @@
             <div class="extra content">
                 <i class="check icon"></i>
                 Participants : {{event.clients.length}}
-                <div class="ui teal button right floated"><i class="ui ticket icon"></i> tickets!</div>
+                <a class="ui teal button right floated" href="#events/ticket/{{key}}"><i class="ui ticket icon"></i> tickets!</a>
             </div>
 
         </div>
-
-        <h1 ng-model="text"></h1>
 
     </div>
 </div>

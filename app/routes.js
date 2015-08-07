@@ -5,16 +5,15 @@ app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'public/views/home.html',
-            controller : 'homeController'
+            controller: 'homeController'
         })
         .when('/events', {
             templateUrl: 'public/views/list.html',
-            controller : 'eventsController'
+            controller: 'eventsController'
         })
         .when("/events/ticket/:id", {
-            templateURL : '',
-            controller : ''
+            templateUrl: 'public/views/event-details.html',
+            controller: 'detailsOnEventController'
         })
-    .otherwise({redirectTo: '/'})
-})
-
+        .otherwise({redirectTo: '/'})
+});
