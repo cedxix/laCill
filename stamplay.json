@@ -1,6 +1,6 @@
 {
-  "appId": "lugus",
-  "apiKey": "e5750fad0f95186463258e3c7292d2f6b5cddd24bdc86641613180393a655161",
+  "appId": "ewayzer",
+  "apiKey": "2d243d56c6c05250a282fe6a56cce7990be3193bc107d942ff6f76fa9351ea13",
   "public": "./",
   "ignore": [
     "stamplay.json",

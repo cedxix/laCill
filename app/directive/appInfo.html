@@ -1,0 +1,26 @@
+<div class="content">
+    <img class="ui avatar image left floated" src="public/img/events/chill/logo-chill.png">
+    {{ event.promotor.name }}
+</div>
+<div class="bluring dimmable image" style="height: 150px;
+            background-image: url({{event.picture}});
+            -webkit-background-size: cover;background-size: cover;
+            background-position: center center;">
+    <img>
+</div>
+<div class="content">
+    <a class="header">{{ event.name }}</a>
+    <div class="meta">
+        <i class="ui calendar icon"></i>
+        <span class="date">{{ event.date |date}}</span>
+        <i class="ui clock icon"></i>
+        <span class="time">22:30</span>
+    </div>
+
+</div>
+
+<div class="extra content">
+    <i class="check icon"></i>
+    Participants : {{event.clients.length}}
+    <div class="ui teal button right floated"><i class="ui ticket icon"></i> tickets!</div>
+</div>
